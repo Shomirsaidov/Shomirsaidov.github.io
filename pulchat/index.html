@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet/style_main.css">
+    <link rel="shortcut icon" href="foto/logo_pulchat_blank.png" type="image/x-icon">
+    <title>www.pulchatt.com</title>
+    <script src="scripts/jquery.js"></script>
+</head>
+<body>
+    <audio src="others/win.mp3" id="win"></audio>
+    <div class="load">
+        <img src="foto/logo_pulchat.png" alt="" class="load_img">
+        <img src="foto/logo_step15.png" alt="" class="load_anim">        
+        <img src="foto/logo_step13.png" alt="" class="load_anim">        
+        <img src="foto/logo_step12.png" alt="" class="load_anim">        
+        <img src="foto/logo_step11.png" alt="" class="load_anim">        
+        <img src="foto/logo_step10.png" alt="" class="load_anim">        
+        <img src="foto/logo_step9.png" alt="" class="load_anim">        
+        <img src="foto/logo_step8.png" alt="" class="load_anim">        
+        <img src="foto/logo_step7.png" alt="" class="load_anim">        
+        <img src="foto/logo_step6.png" alt="" class="load_anim">        
+        <img src="foto/logo_step5.png" alt="" class="load_anim">        
+        <img src="foto/logo_step4.png" alt="" class="load_anim">        
+        <img src="foto/logo_step3.png" alt="" class="load_anim">        
+        <img src="foto/logo_step2.png" alt="" class="load_anim">        
+        <img src="foto/logo_step1.png" alt="" class="load_anim">  
+        <img src="foto/logo_pulchat.png" alt="" class="load_anim">      
+    </div>
+    <div class="wrapper">
+        <div class="nav">
+                <div class="flex_search">
+                    <img src="foto/add-square.svg" alt="" width="63" height="63">
+                    <h2 style="font-family: system-ui;">Опубликовать</h2>
+                </div>
+                <div class="flex_mob">
+                    <h1 style="margin-top: 0; margin-bottom: 0;" class="site_name">Pulchatt</h1>
+                </div>
+                <div class="flex_search">
+                    <input type="text" placeholder="Поиск...">
+                    <img src="foto/search.svg" alt="" width="30" height="31" max="1000">
+                </div>
+                <div class="flex_search">
+                    <img src="foto/user-tie-solid.svg" alt="" width="35" height="35">
+                    <h3 id="name_avatar">Shashik_08</h3>
+                </div>  
+                <div class="flex_mob">
+                    <input type="text" id="search_mob" placeholder="Поиск...">
+                    <img src="foto/s-mob.svg" alt="" width="33" height="33" id="s_mob">
+                    <img src="foto/add-circle.svg" alt="" width="40" height="40" id="ioyandasoz">
+                </div>
+        </div>
+        <div class="navbar_left">
+                <div class="icon">
+                    <div class="flexik">
+                        <img src="foto/logo_white.png" width="100" height="100" alt="" id="foto"><br>
+                    </div>
+                    <div class="site_name">
+                        <h2 class="naz-2">Pulchatt</h2>
+                        <h4 class="copy">©2022 Все права защищены</h4>
+                    </div>
+                </div>
+                <div class="directories">
+                    <div class="selected">
+                        <img src="foto/home.svg" alt="" width="50" height="50">
+                        <h2>Главная</h2>
+                    </div>
+                    <div>
+                        <img src="foto/glass.svg" alt="" width="50" height="50">
+                        <h2>Учителя</h2>
+                    </div>
+                    <div>
+                        <img src="foto/messages.svg" alt="" width="50" height="50">
+                        <h2>Обсуждения</h2>
+                    </div>
+                    <div>
+                        <img src="foto/cup.svg" alt="" width="50" height="50">
+                        <h2>Лига преступности &nbsp&nbsp</h2>
+                    </div>
+                    <div>
+                        <img src="foto/profile.svg" alt="" width="50" height="50">
+                        <h2>Профиль</h2>
+                    </div>
+                    <div>
+                        <img src="foto/setting.svg" alt="" width="50" height="50">
+                        <h2>Настройки</h2>
+                    </div>
+                </div>
+                <button id="login">Войти в аккаунт</button>
+        </div>
+        <div class="main">
+            <div class="cartoch">
+
+
+                <div class='elem'>
+                    <div class="bars">
+                        <div class="author">
+                            <img src="foto/girl.png" alt="" width="33" height="33" class="start_image">
+                            <h2>Noniz.08</h2>
+                        </div>
+                        <div class="flex_colum">
+                            <span id="bars" class="dots">. . .</span>
+                            <div class="options">
+                                <div class="option">Поделиться</div>
+                                <div class="option">Соханить</div>
+                                <div class="option">Подписаться</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="art_image">
+                        <img src="foto/me.jpg" alt="" id="art_img" class="start_image">
+                    </div>
+                    <div class="params_pro">
+                        <div class="params">
+                            <div class="flex_params">
+                                <img src="foto/views.png" alt="" width="15" height="15">
+                                <h3>433</h3>
+                            </div>
+                            <div class="flex_params">
+                                <img src="foto/heart_bold.svg" alt=""  width="200" height="200" id="heart_bold" class="hearts">
+                                <img src="foto/heart.svg" alt=""  width="200" height="200" id="heart" class="hearts">
+                                <h3 id='likes_amount'>386</h3>
+                            </div>
+                            <div class="flex_params">
+                                <img src="foto/dislike.svg" alt=""  width="10" height="10" id="dislike" class='dislikes'>
+                                <img src="foto/dislike_bold.svg" alt="" class='dislikes' width="10" height="10" id="dislike_bold">
+                                <h3 id='dislikes_amount'>0</h3>
+                            </div>
+                            <div class="flex_params">
+                                <img src="foto/message.svg" alt=""  width="10" height="10">
+                                <h3>211</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="flex1">
+                            <div class="status">
+                                <div class="status_bar">
+                                    <img src="foto/lovely.svg" alt="" width="30" height="30">
+                                    <h2>Любовные</h2>
+                                </div>
+                                <span id="time_publish">2 минуты назад</span>
+                            </div>
+                        </div>
+                        <h1>Он сводит меня с ума</h1>
+                        <h4>Мне кажется что я реально втюрилась. Вы только взгляните на этого мужика. Я готова ему дать ...ещё</h4>
+                        <div class="hashtag">
+                            <span><a href="#">#абубакршомирсаидов</a></span>
+                            <span><a href="#">#создателипулчата</a></span>
+                            <span><a href="#">#красавчик</a></span>
+                            <span><a href="#">#любовь</a></span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class='elem'>
+                    <div class="bars">
+                        <div class="author">
+                            <img src="foto/author7.png" alt="" width="33" height="33" class="start_image">
+                            <h2>Dedi Maktab</h2>
+                        </div>
+                        <div class="flex_colum">
+                            <span id="bars" class="dots">. . .</span>
+                            <div class="options">
+                                <div class="option">Поделиться</div>
+                                <div class="option">Соханить</div>
+                                <div class="option">Подписаться</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="art_image">
+                        <img src="foto/fight.png" alt="" id="art_img" class="start_image">
+                    </div>
+                    <div class="params_pro">
+                        <div class="params">
+                            <div class="flex_params">
+                                <img src="foto/views.png" alt="" width="15" height="15">
+                                <h3>236</h3>
+                            </div>
+                            <div class="flex_params">
+                                <img src="foto/heart_bold.svg" alt=""  width="200" height="200" id="heart_bold" class="hearts">
+                                <img src="foto/heart.svg" alt=""  width="200" height="200" id="heart" class="hearts">
+                                <h3 id='likes_amount'>88</h3>
+                            </div>
+                            <div class="flex_params">
+                                <img src="foto/dislike.svg" alt=""  width="10" height="10" id="dislike" class='dislikes'>
+                                <img src="foto/dislike_bold.svg" alt="" class='dislikes' width="10" height="10" id="dislike_bold">
+                                <h3 id='dislikes_amount'>49</h3>
+                            </div>
+                            <div class="flex_params">
+                                <img src="foto/message.svg" alt=""  width="10" height="10">
+                                <h3>29</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="flex1">
+                            <div class="status">
+                                <div class="status_bar">
+                                    <img src="foto/danger.svg" alt="" width="30" height="30">
+                                    <h2>Новости</h2>
+                                </div>
+                                <span id="time_publish">2 дня назад</span>
+                            </div>
+                        </div>
+                        <h1>Парвизи 8 "В" калтака худдас !</h1>
+                        <h4>Дина бади дарс боли Итальянонда чанг шуд. Панчумо толпа шуда Парвиза гоидиян...ещё</h4>
+                        <div class="hashtag">
+                            <span><a href="#">#чанг</a></span>
+                            <span><a href="#">#парвизрахматов</a></span>
+                            <span><a href="#">#синфи5</a></span>
+                            <span><a href="#">#итальяно</a></span>
+                            <span><a href="#">#дедимактаб</a></span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class='elem'>
+                    <div class="bars">
+                        <div class="author">
+                            <img src="foto/author.png" alt="" width="33" height="33" class="start_image">
+                            <h2>Rusvelt Daniel</h2>
+                        </div>
+                        <div class="flex_colum">
+                            <span id="bars" class="dots">. . .</span>
+                            <div class="options">
+                                <div class="option">Поделиться</div>
+                                <div class="option">Соханить</div>
+                                <div class="option">Подписаться</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="art_image">
+                        <img src="foto/foto-1.png" alt="" id="art_img" class="start_image">
+                    </div>
+                    <div class="params_pro">
+                        <div class="params">
+                            <div class="flex_params">
+                                <img src="foto/views.png" alt="" width="15" height="15">
+                                <h3>89</h3>
+                            </div>
+                            <div class="flex_params">
+                                <img src="foto/heart_bold.svg" alt=""  width="200" height="200" id="heart_bold" class="hearts">
+                                <img src="foto/heart.svg" alt=""  width="200" height="200" id="heart" class="hearts">
+                                <h3 id='likes_amount'>70</h3>
+                            </div>
+                            <div class="flex_params">
+                                <img src="foto/dislike.svg" alt=""  width="10" height="10" id="dislike" class='dislikes'>
+                                <img src="foto/dislike_bold.svg" alt="" class='dislikes' width="10" height="10" id="dislike_bold">
+                                <h3 id='dislikes_amount'>2</h3>
+                            </div>
+                            <div class="flex_params">
+                                <img src="foto/message.svg" alt=""  width="10" height="10">
+                                <h3>80</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="flex1">
+                            <div class="status">
+                                <div class="status_bar">
+                                    <img src="foto/lovely.svg" alt="" width="30" height="30">
+                                    <h2>Любовные</h2>
+                                </div>
+                                <span id="time_publish">3 месяца назад</span>
+                            </div>
+                        </div>
+                        <h1>Юнусова и Зокиров - классная пара, не так ли ?</h1>
+                        <h4>В последнее время обстановка между этими двумя молодыми людьми накаляется. Скоро произойдёт то чего мы ждали - ИЗМЕНА...ещё</h4>
+                        <div class="hashtag">
+                            <span><a href="#">#зокиров</a></span>
+                            <span><a href="#">#юнусова</a></span>
+                            <span><a href="#">#любовь</a></span>
+                            <span><a href="#">#измена</a></span>
+                            <span><a href="#">#завуч</a></span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                
+                <div class='elem'>
+                    <div class="bars">
+                        <div class="author">
+                            <img src="foto/author1.png" alt="" width="33" height="33" class="start_image">
+                            <h2>Anonymous Ramigaffa</h2>
+                        </div>
+                        <div class="flex_colum">
+                            <span id="bars" class="dots">. . .</span>
+                            <div class="options">
+                                <div class="option">Поделиться</div>
+                                <div class="option">Соханить</div>
+                                <div class="option">Подписаться</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="art_image">
+                        <img src="foto/auto_0.jpg" alt="" id="art_img" class="start_image">
+                    </div>
+                    <div class="params_pro">
+                        <div class="params">
+                            <div class="flex_params">
+                                <img src="foto/views.png" alt="" width="15" height="15">
+                                <h3>110</h3>
+                            </div>
+                            <div class="flex_params">
+                                <img src="foto/heart_bold.svg" alt=""  width="200" height="200" id="heart_bold" class="hearts">
+                                <img src="foto/heart.svg" alt=""  width="200" height="200" id="heart" class="hearts">
+                                <h3 id='likes_amount'>67</h3>
+                            </div>
+                            <div class="flex_params">
+                                <img src="foto/dislike.svg" alt=""  width="10" height="10" id="dislike" class='dislikes'>
+                                <img src="foto/dislike_bold.svg" alt="" class='dislikes' width="10" height="10" id="dislike_bold">
+                                <h3 id='dislikes_amount'>12</h3>
+                            </div>
+                            <div class="flex_params">
+                                <img src="foto/message.svg" alt=""  width="10" height="10">
+                                <h3>31</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="flex1">
+                            <div class="status">
+                                <div class="status_bar">
+                                    <img src="foto/fire.gif" alt="" width="40" height="40">
+                                    <h2>В тренде</h2>
+                                </div>
+                                <span id="time_publish">2 часа назад</span>
+                            </div>
+                        </div>
+                        <h1>Надоела сменная обувь !</h1>
+                        <h4>Это абсолютно бесполезно тем более летом когда на улице нет луж и снега. Всё равно никто не меняет обувь. Идите нахуй !</h4>
+                        <div class="hashtag">
+                            <span><a href="#">#сменнаяобувь</a></span>
+                            <span><a href="#">#шкафчики</a></span>
+                            <span><a href="#">#ключиотшкафчика</a></span>
+                            <span><a href="#">#коробкадляобуви</a></span>
+                            <span><a href="#">#школьныеправила</a></span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class='elem'>
+                    <div class="bars">
+                        <div class="author">
+                            <img src="foto/author2.png" alt="" width="33" height="33" class="start_image">
+                            <h2>Agent 007</h2>
+                        </div>
+                        <div class="flex_colum">
+                            <span id="bars" class="dots">. . .</span>
+                            <div class="options">
+                                <div class="option">Поделиться</div>
+                                <div class="option">Соханить</div>
+                                <div class="option">Подписаться</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="art_image">
+                        <img src="foto/tele_0.jpg" alt="" id="art_img" class="start_image">
+                    </div>
+                    <div class="params_pro">
+                        <div class="params">
+                            <div class="flex_params">
+                                <img src="foto/views.png" alt="" width="15" height="15">
+                                <h3>242</h3>
+                            </div>
+                            <div class="flex_params">
+                                <img src="foto/heart_bold.svg" alt=""  width="200" height="200" id="heart_bold" class="hearts">
+                                <img src="foto/heart.svg" alt=""  width="200" height="200" id="heart" class="hearts">
+                                <h3 id='likes_amount'>7</h3>
+                            </div>
+                            <div class="flex_params">
+                                <img src="foto/dislike.svg" alt=""  width="10" height="10" id="dislike" class='dislikes'>
+                                <img src="foto/dislike_bold.svg" alt="" class='dislikes' width="10" height="10" id="dislike_bold">
+                                <h3 id='dislikes_amount'>98</h3>
+                            </div>
+                            <div class="flex_params">
+                                <img src="foto/message.svg" alt=""  width="10" height="10">
+                                <h3>112</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="flex1">
+                            <div class="status">
+                                <div class="status_bar">
+                                    <img src="foto/danger.svg" alt="" width="30" height="30">
+                                    <h2>Сенсация</h2>
+                                </div>
+                                <span id="time_publish">1 день назад</span>
+                            </div>
+                        </div>
+                        <h1>Мы разоблачили директора !</h1>
+                        <h4>В среду наша директорша была замечена с Почоевом. Они страстно целовались в парке Камола Худжанди. Какой ужас !!! ...ещё</h4>
+                        <div class="hashtag">
+                            <span><a href="#">#директор</a></span>
+                            <span><a href="#">#почоев</a></span>
+                            <span><a href="#">#любовь</a></span>
+                            <span><a href="#">#парккамолахуджанди</a></span>
+                            <span><a href="#">#измена</a></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class='elem'>
+                    <div class="bars">
+                        <div class="author">
+                            <img src="foto/author4.png" alt="" width="33" height="33" class="start_image">
+                            <h2>White Cat</h2>
+                        </div>
+                        <div class="flex_colum">
+                            <span id="bars" class="dots">. . .</span>
+                            <div class="options">
+                                <div class="option">Поделиться</div>
+                                <div class="option">Соханить</div>
+                                <div class="option">Подписаться</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="art_image">
+                        <img src="foto/logo_pulchat_blank.png" alt="" id="art_img" class="start_image">
+                    </div>
+                    <div class="params_pro">
+                        <div class="params">
+                            <div class="flex_params">
+                                <img src="foto/views.png" alt="" width="15" height="15">
+                                <h3>188</h3>
+                            </div>
+                            <div class="flex_params">
+                                <img src="foto/heart_bold.svg" alt=""  width="200" height="200" id="heart_bold" class="hearts">
+                                <img src="foto/heart.svg" alt=""  width="200" height="200" id="heart" class="hearts">
+                                <h3 id='likes_amount'>3</h3>
+                            </div>
+                            <div class="flex_params">
+                                <img src="foto/dislike.svg" alt=""  width="10" height="10" id="dislike" class='dislikes'>
+                                <img src="foto/dislike_bold.svg" alt="" class='dislikes' width="10" height="10" id="dislike_bold">
+                                <h3 id='dislikes_amount'>101</h3>
+                            </div>
+                            <div class="flex_params">
+                                <img src="foto/message.svg" alt=""  width="10" height="10">
+                                <h3>77</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="flex1">
+                            <div class="status">
+                                <div class="status_bar">
+                                    <img src="foto/emoji-sad.svg" alt="" width="30" height="30">
+                                    <h2>Печальные</h2>
+                                </div>
+                                <span id="time_publish">2 недели назад</span>
+                            </div>
+                        </div>
+                        <h1>Pulchat закроют ?!</h1>
+                        <h4>По некоторым данным в среду основатель школы Пулатов П.А в конце концов нашёл создателей PULCHATT. Теперь им грозит исключение и принудительное уничтожение сайта...ещё</h4>
+                        <div class="hashtag">
+                            <span><a href="#">#пулатов</a></span>
+                            <span><a href="#">#создателипулчата</a></span>
+                            <span><a href="#">#исключение</a></span>
+                            <span><a href="#">#конец</a></span>
+                            <span><a href="#">#разоблачение</a></span>
+                        </div>
+                    </div>
+                </div>
+
+               
+
+                <div class="mobile_nav">
+                    <div>
+                        <img src="foto/home-mob.svg" alt="" width="40" height="40">
+                        <h2>Главная</h2>
+                    </div>
+                    <div>
+                        <img src="foto/glass-mob.svg" alt="" width="40" height="40">
+                        <h2>Учителя</h2>
+                    </div>
+                    <div>
+                        <img src="foto/messages-mob.svg" alt="" width="40" height="40">
+                        <h2>Обсуждения</h2>
+                    </div>
+                    <div>
+                        <img src="foto/cup-mob.svg" alt="" width="40" height="40">
+                        <h2>Лига</h2>
+                    </div>
+                    <div>
+                        <img src="foto/profile-mob.svg" alt="" width="40" height="40">
+                        <h2>Профиль</h2>
+                    </div>
+                    
+                </div>
+
+
+                
+
+
+
+
+
+            </div>
+        </div>
+    </div>    
+</body>
+<script src="scripts/main_animation.js"></script>
+</html> 
